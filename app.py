@@ -13,7 +13,7 @@ if connection_string:
     try:
         # Подключение к MongoDB
         client = MongoClient(connection_string, tls=True, tlsAllowInvalidCertificates=True)
-        db = client['your_database_name']
+        db = client['GameDevNews']
         available_tasks_collection = db['AvailableTasks']
         users_collection = db['Users']
 
